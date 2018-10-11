@@ -31,6 +31,14 @@ Autoprefixer Rails doesn’t support these Autoprefixer features:
 Windows users should install [node.js](http://nodejs.org/).
 Autoprefixer Rails doesn’t work with old JScript in Windows.
 
+Autoprefixer Rails uses [execjs][1] that will use the best available javascript
+runtime. Currently this gem is tested to work with node.js version 6 and up and
+with [mini_racer][2], but will not work with [therubyracer][3].
+
+ [1]: https://github.com/rails/execjs
+ [2]: https://github.com/discourse/mini_racer
+ [3]: https://github.com/cowboyd/therubyracer
+
 ### Ruby on Rails
 
 Add the `autoprefixer-rails` gem to your `Gemfile`:
